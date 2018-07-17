@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Consumir Google API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+   #map {
+    height: 100vh;
+    width: 50vw;
+  }
+</style>
+</head>
+<body>
+  <div class="row">
+   <div class="col-md-6">
+     <div id="map"></div>
+   </div>
+   <div class="col-md-6">
+    <h1 class="text-center">Consumir Google Maps API</h1>
+    <div class="form-group">
+     <select class="form-control" id="select">
+     <option>Seleccione una ubicación:</option>
+      <option value="santiago">Santiago</option>
+      <option value="arica">Arica</option>
+      <option value="isla">Isla de Pascua</option>
+    </select>
+    <h1 id="resumen" class="text-center"></h1>
+    <div class="col-md-offset-3 col-md-6">
+      <img src="" class="img-responsive">
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA_m00gCN3it7ADJYxXIpX8tVAZGzwnbo&callback=initMap">
+</script>
+</body>
+</html>
