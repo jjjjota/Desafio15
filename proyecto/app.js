@@ -70,7 +70,7 @@ select.on('change', function() {
   $.ajax({
     url: url + key + coords[$(this).val()].lat + ',' + coords[$(this).val()].lng + '?' + queryParams[0] + '&' + queryParams[1] + '&' + queryParams[2],
     method: 'GET',
-    xhrFields: {cors: false}
+    dataType:'jsonp'
   }).then(function(data) {
     resumen.text(parseInt(data.currently.temperature) + '° ' + data.currently.summary);
     imagen.attr('src',image[data.currently.icon]);
